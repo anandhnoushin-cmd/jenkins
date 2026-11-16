@@ -1,0 +1,157 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: table.spec.js >> handling table
+- Location: tests\table.spec.js:3:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.goto: Test timeout of 30000ms exceeded.
+Call log:
+  - navigating to "https://testautomationpractice.blogspot.com/", waiting until "load"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e16]:
+  - banner [ref=e17]:
+    - generic [ref=e23]:
+      - heading "Automation Testing Practice" [level=1] [ref=e25]
+      - paragraph [ref=e27]: For Selenium, Cypress & Playwright
+  - list [ref=e34]:
+    - listitem [ref=e35]:
+      - link "Home" [ref=e36] [cursor=pointer]:
+        - /url: http://testautomationpractice.blogspot.com/
+    - listitem [ref=e37]:
+      - link "Udemy Courses" [ref=e38] [cursor=pointer]:
+        - /url: https://www.pavanonlinetrainings.com/#udemy
+    - listitem [ref=e39]:
+      - link "Online Trainings" [ref=e40] [cursor=pointer]:
+        - /url: https://www.pavanonlinetrainings.com/
+    - listitem [ref=e41]:
+      - link "Blog" [ref=e42] [cursor=pointer]:
+        - /url: https://www.pavantestingtools.com/
+    - listitem [ref=e43]:
+      - link "PlaywrightPractice" [ref=e44] [cursor=pointer]:
+        - /url: https://testautomationpractice.blogspot.com/p/playwrightpractice.html
+  - generic [ref=e64]:
+    - heading [level=3] [ref=e65]:
+      - link "Data Entry Form" [ref=e66] [cursor=pointer]:
+        - /url: https://testautomationpractice.blogspot.com/2018/09/automation-form.html
+    - generic [ref=e67]:
+      - generic [ref=e68]:
+        - text: "Name:"
+        - textbox "Enter Name" [ref=e69]
+        - text: "Email:"
+        - textbox "Enter EMail" [ref=e70]
+        - text: "Phone:"
+        - textbox "Enter Phone" [ref=e71]
+      - generic [ref=e72]:
+        - text: "Address:"
+        - textbox "Address:" [ref=e73]
+      - generic [ref=e74]:
+        - text: "Gender:"
+        - generic [ref=e75]:
+          - radio "Male" [ref=e76]
+          - text: Male
+        - generic [ref=e77]:
+          - radio "Female" [ref=e78]
+          - text: Female
+      - generic [ref=e79]:
+        - text: "Days:"
+        - generic [ref=e80]:
+          - checkbox "Sunday" [ref=e81]
+          - text: Sunday
+        - generic [ref=e82]:
+          - checkbox "Monday" [ref=e83]
+          - text: Monday
+        - generic [ref=e84]:
+          - checkbox "Tuesday" [ref=e85]
+          - text: Tuesday
+        - generic [ref=e86]:
+          - checkbox "Wednesday" [ref=e87]
+          - text: Wednesday
+        - generic [ref=e88]:
+          - checkbox "Thursday" [ref=e89]
+          - text: Thursday
+        - generic [ref=e90]:
+          - checkbox "Friday" [ref=e91]
+          - text: Friday
+        - generic [ref=e92]:
+          - checkbox "Saturday" [ref=e93]
+          - text: Saturday
+      - generic [ref=e94]:
+        - text: "Country:"
+        - combobox "Country:" [ref=e95]:
+          - option "United States" [selected]
+          - option "Canada"
+          - option "United Kingdom"
+          - option "Germany"
+          - option "France"
+          - option "Australia"
+          - option "Japan"
+          - option "China"
+          - option "Brazil"
+          - option "India"
+      - generic [ref=e96]:
+        - text: "Colors:"
+        - listbox "Colors:" [ref=e97]:
+          - option "Red" [ref=e98]
+          - option "Blue" [ref=e99]
+          - option "Green" [ref=e100]
+          - option "Yellow" [ref=e101]
+          - option "Red" [ref=e102]
+          - option "White" [ref=e103]
+          - option "Green" [ref=e104]
+      - generic [ref=e105]:
+        - text: "Sorted List:"
+        - listbox "Sorted List:" [ref=e106]:
+          - option "Cat" [ref=e107]
+          - option "Cheetah" [ref=e108]
+          - option "Deer" [ref=e109]
+          - option "Dog" [ref=e110]
+          - option "Elephant" [ref=e111]
+          - option "Fox" [ref=e112]
+          - option "Giraffe" [ref=e113]
+          - option "Lion" [ref=e114]
+          - option "Rabbit" [ref=e115]
+          - option "Zebra" [ref=e116]
+```
+
+# Test source
+
+```ts
+  1  | 
+  2  | import { test,expect}from'@playwright/test'
+  3  | test("handling table",async({page})=>{
+  4  | 
+> 5  |     await page.goto("https://testautomationpractice.blogspot.com/")
+     |                ^ Error: page.goto: Test timeout of 30000ms exceeded.
+  6  |     const rows=page.locator('//table[@id="productTable"]/tbody/tr') //5
+  7  |     const column=page.locator('//table[@id="productTable"]/thead/tr/th') //4
+  8  | 
+  9  |     console.log("ROWS COUNT :",await rows.count());
+  10 |     console.log("COLUMN COUNT :",await column.count());
+  11 |     
+  12 |   
+  13 |     //method 1
+  14 |     //await page.locator('//table[@id="productTable"]/descendant::td[text()="Smartphone"]/following-sibling::td/child::input[@type="checkbox"]')
+  15 | 
+  16 | //method 2
+  17 | await rows.locator('//td[text()="Smartphone"]/following-sibling::td/child::input[@type="checkbox"]').check()
+  18 | 
+  19 | page.pause()
+  20 | })
+```

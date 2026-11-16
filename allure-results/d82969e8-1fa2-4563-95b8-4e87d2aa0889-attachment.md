@@ -1,0 +1,501 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: tabs.spec.js >> page flipkart
+- Location: tests\tabs.spec.js:62:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.goto: Test timeout of 30000ms exceeded.
+Call log:
+  - navigating to "https://www.flipkart.com/mobile-phones-store?pageUID=1791219342622", waiting until "load"
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e13]:
+    - generic [ref=e16]:
+      - generic [ref=e18]:
+        - generic [ref=e27]:
+          - generic [ref=e29]:
+            - img "Image" [ref=e32]
+            - img "Image" [ref=e35]
+          - link [ref=e37] [cursor=pointer]:
+            - /url: /flights-travel-uhp-at-store?marketplace=FKT
+            - img "Image" [ref=e40]
+            - img "Image" [ref=e43]
+        - generic [ref=e53]:
+          - generic [ref=e54]: Location not set
+          - generic [ref=e59]: Select delivery location
+      - banner [ref=e70]:
+        - generic [ref=e74]:
+          - button "Search for Products, Brands and More" [ref=e75] [cursor=pointer]:
+            - img "Search Icon" [ref=e76]
+          - textbox "Search for Products, Brands and More" [ref=e80]
+        - generic [ref=e81]:
+          - generic [ref=e86]:
+            - link "Login" [ref=e87] [cursor=pointer]:
+              - /url: /login?ret=/
+              - img "Login" [ref=e88]
+            - img "Chevron" [ref=e90]
+          - generic [ref=e95]:
+            - link "More" [ref=e96] [cursor=pointer]:
+              - /url: "#"
+            - img "Chevron" [ref=e98]
+          - link "Cart Cart" [ref=e101] [cursor=pointer]:
+            - /url: /viewcart?marketplace=FLIPKART
+            - img "Cart" [ref=e102]
+            - generic [ref=e103]: Cart
+      - generic [ref=e105]:
+        - link "For You" [ref=e110] [cursor=pointer]:
+          - /url: https://www.flipkart.com/
+        - link "Fashion" [ref=e121] [cursor=pointer]:
+          - /url: /ss-26-base-inline-at-store
+        - link [ref=e132] [cursor=pointer]:
+          - /url: /mobile-phones-store
+          - heading "Mobiles" [level=1] [ref=e138]
+        - link "Electronics" [ref=e143] [cursor=pointer]:
+          - /url: /new-elec-clp-march-at-store
+        - link "Beauty" [ref=e154] [cursor=pointer]:
+          - /url: /bpc-bau-new-inline-at-store
+        - link "Home" [ref=e165] [cursor=pointer]:
+          - /url: /home-kitchen-25-at-store
+        - link "Appliances" [ref=e176] [cursor=pointer]:
+          - /url: /tv-and-appliances-inline-ab-at-store
+        - link "Toys, baby.." [ref=e187] [cursor=pointer]:
+          - /url: /toysbc-new26-inline-at-store
+        - link "Food & Health" [ref=e198] [cursor=pointer]:
+          - /url: /fnhc-2025-new-at-store
+        - link "Auto Accessories" [ref=e209] [cursor=pointer]:
+          - /url: /aa-2025-new-at-store
+        - link "Sports & Fitness" [ref=e220] [cursor=pointer]:
+          - /url: /sf-inline-2025-at-store
+        - link "Furniture" [ref=e231] [cursor=pointer]:
+          - /url: /india-ka-furniture-studio-inlines-at-store
+        - link "Books" [ref=e242] [cursor=pointer]:
+          - /url: /books-at-store
+        - link "2 Wheelers" [ref=e253] [cursor=pointer]:
+          - /url: /twowheelers-at-store
+    - generic [ref=e267]:
+      - generic [ref=e282]:
+        - link [ref=e289] [cursor=pointer]:
+          - /url: /apple-iphone-17-lavender-256-gb/p/itm5c650337c09ee?pid=MOBHQV9YDG7CGRAM&marketplace=FLIPKART&lid=LSTMOBHQV9YDG7CGRAMOQWOKL&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiSUFEIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fX19fQ%3D%3D&nnc=L71AE1BW76FS_IAD&BU=Mobile
+          - img "Image" [ref=e292]
+        - link [ref=e299] [cursor=pointer]:
+          - /url: /samsung-galaxy-s25-fe-5g-jetblack-128-gb/p/itm90e887b150eea?pid=MOBHQCH6FPTX5FZ2&marketplace=FLIPKART&lid=LSTMOBHQCH6FPTX5FZ26HBEZT&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiSUFEIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fX19fQ%3D%3D&nnc=GAX92CLP06F4_IAD&BU=Mobile
+          - img "Image" [ref=e302]
+        - link [ref=e309] [cursor=pointer]:
+          - /url: /motorola-edge-70-fusion-snapdragon-pantone-blue-surf-128-gb/p/itmde3fff77e262b?pid=MOBHN973UHXUTABD&param=29922&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiSUFEIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fX19fQ%3D%3D&nnc=71ZG9OBVKJU5_IAD&BU=Mobile
+          - img "Image" [ref=e312]
+        - link [ref=e319] [cursor=pointer]:
+          - /url: /mivi-one-5g-green-128-gb/p/itm7c374475b93cf?pid=MOBHR3ZP7PRKEXUP&marketplace=FLIPKART&lid=LSTMOBHR3ZP7PRKEXUPKQQIR0&pageUID=1792249741149&param=45651&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiQUQiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19&nnc=X7OZ0NEP2EAI_AD&BU=Mobile
+          - img "Image" [ref=e322]
+        - link [ref=e329] [cursor=pointer]:
+          - /url: /vivo-t5x-5g-flame-red-128-gb/p/itm7da8aa253e72b?pid=MOBHQC8ZE5PQMZPH&marketplace=FLIPKART&lid=LSTMOBHQC8ZE5PQMZPHIGGQB1&param=0989&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiSUFEIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fX19fQ%3D%3D&nnc=ZWCCUQPMBXQ2_IAD&BU=Mobile
+          - img "Image" [ref=e332]
+        - link [ref=e339] [cursor=pointer]:
+          - /url: /realme-p4-power-5g-charger-box-transsilver-128-gb/p/itm756857550aae6?pid=MOBHJHSH4HHMYHEG&marketplace=FLIPKART&lid=LSTMOBHN7A8E2QAXYCZ4AT06D&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiSUFEIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fX19fQ%3D%3D&nnc=EEZM6GUEAO31_IAD&BU=Mobile
+          - img "Image" [ref=e342]
+        - link [ref=e349] [cursor=pointer]:
+          - /url: /google-pixel-11-frost-256-gb/p/itmc51935a8001b1?pid=MOBHPHNVEC2P4WV3&marketplace=FLIPKART&lid=LSTMOBHPHNVEC2P4WV3UCPNQ6&hl_lid=LSTMOBHPHNVEC2P4WV3S9XEHB&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiSUFEIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fX19fQ%3D%3D&nnc=M1YSOC27DCZW_IAD&BU=Mobile
+          - img "Image" [ref=e352]
+        - link [ref=e359] [cursor=pointer]:
+          - /url: /motorola-signature-pantone-martini-olive-512-gb/p/itm74c2055820110?pid=MOBHGVJY6SUYWYTK&lid=LSTMOBHGVJY6SUYWYTK1ML1KA&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiSUFEIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fX19fQ%3D%3D&nnc=H38EORHCBM3Z_IAD&BU=Mobile
+          - img "Image" [ref=e362]
+        - link [ref=e369] [cursor=pointer]:
+          - /url: /hmd-vibe2-5g-cosmic-lavender-128-gb/p/itm71c3ae6df2a26?pid=MOBHN6XYGKZEYC64&param=187267&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiSUFEIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fX19fQ%3D%3D&nnc=AH70QHZ6GYMV_IAD&BU=Mobile
+          - img "Image" [ref=e372]
+        - link [ref=e379] [cursor=pointer]:
+          - /url: /ai-nova-2-5g-blue-128-gb/p/itmb8204f6c4e198?pid=MOBHZPMCMVUGFUCE&marketplace=FLIPKART&lid=LSTMOBHZPMCMVUGFUCE7GQTLP&param=98-090&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiSUFEIiwidmFsdWVUeXBlIjoiU0lOR0xFX1ZBTFVFRCJ9fX19fQ%3D%3D&nnc=M1489FL4MXMB_IAD&BU=Mobile
+          - img "Image" [ref=e382]
+      - generic [ref=e409]:
+        - generic [ref=e410]:
+          - link "iPhone" [ref=e416] [cursor=pointer]:
+            - /url: /apple-tbbd-26-at-store?param=288021&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbImlQaG9uZSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D
+          - link "motorola" [ref=e427] [cursor=pointer]:
+            - /url: /motorola-tbbd-26-at-store?param=34545&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIm1vdG9yb2xhIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D
+          - link "realme" [ref=e438] [cursor=pointer]:
+            - /url: /realme-tbbd-26-at-store?param=09876&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbInJlYWxtZSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D
+          - link "POCO" [ref=e449] [cursor=pointer]:
+            - /url: /poco-tbbd-26-at-store?param=0987659&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIlBPQ08iXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19
+          - link "Google" [ref=e460] [cursor=pointer]:
+            - /url: /google-tbbd-26-at-store?param=2234&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIkdvb2dsZSJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D
+          - link "HMD" [ref=e471] [cursor=pointer]:
+            - /url: /hmd-tbbd-26-at-store?param=277782&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIkhNRCJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D
+          - link "boltt" [ref=e482] [cursor=pointer]:
+            - /url: /boltt-intrigue-tbbd-26-at-store?param=56789&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbImJvbHR0Il0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D
+          - link "MIVI" [ref=e493] [cursor=pointer]:
+            - /url: /mivi-one-5g-blue-128-gb/p/itmde179056e0187?pid=MOBHR3ZP5ZJG8EXR&param=34345566&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIk1JVkkiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19
+          - link "Tecno" [ref=e504] [cursor=pointer]:
+            - /url: /tecno-tbbd-26-at-store?param=8334&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIlRlY25vIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D
+        - generic [ref=e510]:
+          - link "Samsung" [ref=e516] [cursor=pointer]:
+            - /url: /samsung-tbbd-26-at-store?param=0987655&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIlNhbXN1bmciXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19
+          - link "vivo" [ref=e527] [cursor=pointer]:
+            - /url: /vivo-tbbd-26-at-store?param=23456&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbInZpdm8iXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19
+          - link "OPPO" [ref=e538] [cursor=pointer]:
+            - /url: /oppo-tbbd-26-at-store?param=09879&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIk9QUE8iXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19
+          - link "Ai+" [ref=e549] [cursor=pointer]:
+            - /url: /ai-plus-tbbd-26-at-store?param=098760&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIkFpKyJdLCJ2YWx1ZVR5cGUiOiJNVUxUSV9WQUxVRUQifX19fX0%3D
+          - link "Nothing" [ref=e560] [cursor=pointer]:
+            - /url: /nothing-tbbd-26-at-store?param=734423&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIk5vdGhpbmciXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19
+          - link "Infinix" [ref=e571] [cursor=pointer]:
+            - /url: /infinix-tbbd-26-at-store?param=8775&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIkluZmluaXgiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19
+          - link "LAVA" [ref=e582] [cursor=pointer]:
+            - /url: /lava-tbbd-26-at-store?param=6229&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIkxBVkEiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19
+          - link "REDMI" [ref=e593] [cursor=pointer]:
+            - /url: /redmi-tbbd-26-at-store?param=299929&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIlJFRE1JIl0sInZhbHVlVHlwZSI6Ik1VTFRJX1ZBTFVFRCJ9fX19fQ%3D%3D
+          - link "Google One" [ref=e604] [cursor=pointer]:
+            - /url: /google-one-at-store?param=0987&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InRpdGxlIjp7Im11bHRpVmFsdWVkQXR0cmlidXRlIjp7ImtleSI6InRpdGxlIiwiaW5mZXJlbmNlVHlwZSI6IlRJVExFIiwidmFsdWVzIjpbIkdvb2dsZSBPbmUiXSwidmFsdWVUeXBlIjoiTVVMVElfVkFMVUVEIn19fX19
+      - link [ref=e620] [cursor=pointer]:
+        - /url: /mobiles/~cs-obtds7nhfa/pr?sid=tyy%2C4io&collection-tab-name=NCE+Coverage+Collection&param=8651&BU=Mobile
+        - img "Image" [ref=e626]
+      - generic [ref=e636]:
+        - generic [ref=e637]: Featured Brands
+        - generic [ref=e643]:
+          - generic [ref=e644]:
+            - link [ref=e649] [cursor=pointer]:
+              - /url: /tecno-spark-go-3-galaxy-blue-64-gb/p/itma9c8f128a61c6?pid=MOBHP2QYFPVRGYKZ&param=1791117900440&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiQUQiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19&nnc=L2RHB2OINUWP_AD&BU=Mobile
+              - img "Image" [ref=e652]
+            - link [ref=e657] [cursor=pointer]:
+              - /url: /lava-virat-v1-pro-5g-sikkim-midnight-128-gb/p/itm1a8312d187a80?pid=MOBHQDFAP3AAZUFG&marketplace=FLIPKART&lid=LSTMOBHQDFAP3AAZUFGWKLCO2&pageUID=1792568493531&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiQUQiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19&nnc=DOWAAXK8OXQO_AD&BU=Mobile
+              - img "Image" [ref=e660]
+            - link [ref=e665] [cursor=pointer]:
+              - /url: /infinix-hot-60i-5g-shadow-blue-128-gb/p/itm1cb6bf875f6e0?pid=MOBHERZERAFFCH7M&param=12312&ctx=eyJjYXJkQ29udGV4dCI6eyJhdHRyaWJ1dGVzIjp7InNvdXJjZUNvbnRlbnRUeXBlIjp7InNpbmdsZVZhbHVlQXR0cmlidXRlIjp7ImtleSI6InNvdXJjZUNvbnRlbnRUeXBlIiwiaW5mZXJlbmNlVHlwZSI6IlNDVCIsInZhbHVlIjoiQUQiLCJ2YWx1ZVR5cGUiOiJTSU5HTEVfVkFMVUVEIn19fX19&nnc=UPG2HFXIB0A4_AD&BU=Mobile
+              - img "Image" [ref=e668]
+          - button [ref=e669]
+      - img "Image" [ref=e687]
+      - generic [ref=e698]:
+        - link [ref=e703] [cursor=pointer]:
+          - /url: /apple-iphone-15-blue-128-gb/p/itm387c20f1f5347?pid=MOBHQV9YZGYG64U7&marketplace=FLIPKART&lid=LSTMOBHQV9YZGYG64U7WLKZD8&param=299098789&BU=Mobile
+          - img "Image" [ref=e706]
+        - link [ref=e711] [cursor=pointer]:
+          - /url: /nothing-phone-4a-white-128-gb/p/itm47712249513d4?pid=MOBHQENAHHRMSET2&param=64565&BU=Mobile
+          - img "Image" [ref=e714]
+        - link [ref=e719] [cursor=pointer]:
+          - /url: /samsung-galaxy-s25-5g-snapdragon-navy-128-gb/p/itm957543a944c80?pid=MOBHQDMKCCDK2VT7&param=65765&BU=Mobile
+          - img "Image" [ref=e722]
+      - generic [ref=e733]:
+        - link [ref=e738] [cursor=pointer]:
+          - /url: /motorola-edge-70-pro-tailored-fabric-pantone-titan-blue-256-gb/p/itmabaee92c5d0da?pid=MOBHN9734ZPCKBAC&param=t654&BU=Mobile
+          - img "Image" [ref=e741]
+        - link [ref=e746] [cursor=pointer]:
+          - /url: /infinix-hot-60i-5g-shadow-blue-128-gb/p/itm1cb6bf875f6e0?pid=MOBHERZERAFFCH7M&param=135135&BU=Mobile
+          - img "Image" [ref=e749]
+        - link [ref=e754] [cursor=pointer]:
+          - /url: /realme-p4x-5g-matte-silver-128-gb/p/itm575b1540859e4?pid=MOBHN7A8HYC9BPAU&marketplace=FLIPKART&lid=LSTMOBHN7A8HYC9BPAUEQNPRK&param=0987&BU=Mobile
+          - img "Image" [ref=e757]
+      - generic [ref=e768]:
+        - link [ref=e773] [cursor=pointer]:
+          - /url: /oppo-k14-plus-5g-solar-orange-128-gb/p/itm6b2b1016fd57a?pid=MOBHR3ZYZXYQ2GYK&param=64785&BU=Mobile
+          - img "Image" [ref=e776]
+        - link [ref=e781] [cursor=pointer]:
+          - /url: /ai-nova-2-neo-5g-blue-128-gb/p/itmdcaa61dad2064?pid=MOBHZ8ZMTFJZHQQ6&param=363467&BU=Mobile
+          - img "Image" [ref=e784]
+        - link [ref=e789] [cursor=pointer]:
+          - /url: /nothing-phone-4b-white-128-gb/p/itm939608b40adbb?pid=MOBHQENATV85KYCZ&param=384786&BU=Mobile
+          - img "Image" [ref=e792]
+      - img "Image" [ref=e808]
+      - link [ref=e821] [cursor=pointer]:
+        - /url: /select-your-style-june26-store?param=7654&BU=Mobile
+        - img "Image" [ref=e824]
+      - link [ref=e837] [cursor=pointer]:
+        - /url: /pixel-giveway-store?param=7575768&BU=Mobile
+        - img "Image" [ref=e840]
+      - img "Image" [ref=e856]
+      - generic [ref=e869]:
+        - generic [ref=e870]:
+          - link [ref=e875] [cursor=pointer]:
+            - /url: /samsung-galaxy-s25-fe-5g-jetblack-128-gb/p/itm90e887b150eea?pid=MOBHQCH6FPTX5FZ2&param=98769&BU=Mobile
+            - img "Image" [ref=e878]
+          - link [ref=e883] [cursor=pointer]:
+            - /url: /motorola-g37-power-pantone-nautical-blue-64-gb/p/itmd870c5c6fd857?pid=MOBHMHG6KZXMFNKF&param=09876&BU=Mobile
+            - img "Image" [ref=e886]
+          - link [ref=e891] [cursor=pointer]:
+            - /url: /mivi-one-5g-blue-128-gb/p/itmde179056e0187?pid=MOBHR3ZP5ZJG8EXR&marketplace=FLIPKART&lid=LSTMOBHR3ZP5ZJG8EXR1KOC6G&param=98789&BU=Mobile
+            - img "Image" [ref=e894]
+          - link [ref=e899] [cursor=pointer]:
+            - /url: /hmd-vibe2-pro-5g-aqua-green-128-gb/p/itmd425c7e495e6d?pid=MOBHQZZ85MVV5GMX&param=09876&BU=Mobile
+            - img "Image" [ref=e902]
+          - link [ref=e907] [cursor=pointer]:
+            - /url: /boltt-ace-5g-midnight-black-64-gb/p/itm2eb0f483effdd?pid=MOBHPP596AHABWNP&param=2154235&BU=Mobile
+            - img "Image" [ref=e910]
+          - link [ref=e915] [cursor=pointer]:
+            - /url: /ai-nova-2-power-5g-ocean-green-128-gb/p/itm3a086c1102f5c?pid=MOBHQZVXB2KGHKVG&marketplace=FLIPKART&lid=LSTMOBHQZVXB2KGHKVGNOIRRT&param=987878&BU=Mobile
+            - img "Image" [ref=e918]
+          - link [ref=e923] [cursor=pointer]:
+            - /url: /oppo-k14-lite-feather-purple-64-gb/p/itmb13fea9340374?pid=MOBHQZZ2GTANTBKC&param=2353434&BU=Mobile
+            - img "Image" [ref=e926]
+          - link [ref=e931] [cursor=pointer]:
+            - /url: /google-pixel-11-frost-256-gb/p/itmc51935a8001b1?pid=MOBHPHNVEC2P4WV3&param=227712&BU=Mobile
+            - img "Image" [ref=e934]
+        - button [ref=e935]
+      - link [ref=e950] [cursor=pointer]:
+        - /url: https://www.flipkart.com/fpg/cbc/store-page?productType=CC&utm_source=MobileCLP_OTA&utm_source_context=Mobile_SPL&BU=Mobile
+        - img "Image" [ref=e953]
+      - img "Image" [ref=e969]
+      - generic [ref=e984]:
+        - link [ref=e990] [cursor=pointer]:
+          - /url: /samsung-galaxy-f70-5g/p/itmcc1028703e31e?pid=MOBHRV4XYK4GZGHQ&param=8767&BU=Mobile
+          - img "Image" [ref=e993]
+        - link [ref=e999] [cursor=pointer]:
+          - /url: /mivi-one-5g-blue-128-gb/p/itmde179056e0187?pid=MOBHR3ZP5ZJG8EXR&marketplace=FLIPKART&lid=LSTMOBHR3ZP5ZJG8EXR1KOC6G&BU=Mobile
+          - img "Image" [ref=e1002]
+        - link [ref=e1008] [cursor=pointer]:
+          - /url: /oppo-k14-plus-5g-solar-orange-128-gb/p/itm6b2b1016fd57a?pid=MOBHR3ZY3Y8DEZVY&param=757746&BU=Mobile
+          - img "Image" [ref=e1011]
+        - link [ref=e1017] [cursor=pointer]:
+          - /url: /mobiles/~cs-kqe75n4xd0/pr?sid=tyy%2C4io&collection-tab-name=vivo+S2+FE&param=78798&BU=Mobile
+          - img "Image" [ref=e1020]
+        - link [ref=e1026] [cursor=pointer]:
+          - /url: /ai-pulse-2-fe-blue-64-gb/p/itm53496a1ee974d?pid=MOBHQZVX9JGVG3XF&param=54768&BU=Mobile
+          - img "Image" [ref=e1029]
+        - link [ref=e1035] [cursor=pointer]:
+          - /url: /hmd-vibe2-pro-5g-silver-mist-128-gb/p/itmbd324a99e55f1?pid=MOBHQZZ8VYRYQTQZ&param=127687678&BU=Mobile
+          - img "Image" [ref=e1038]
+      - generic [ref=e1055]:
+        - generic [ref=e1059]:
+          - img "Image" [ref=e1062]
+          - generic [ref=e1063]: Top Deals on No Cost EMI
+        - generic [ref=e1070]:
+          - generic [ref=e1071]:
+            - link [ref=e1076] [cursor=pointer]:
+              - /url: /samsung-galaxy-s25-5g-snapdragon-silver-shadow-128-gb/p/itm957543a944c80?pid=MOBHQDMKYG8JCE4R&param=13451351&BU=Mobile
+              - img "Image" [ref=e1079]
+            - link [ref=e1084] [cursor=pointer]:
+              - /url: /motorola-edge-70-fusion-snapdragon-pantone-blue-surf-256-gb/p/itmab1b62c8461fa?pid=MOBHN9733F5QHAQC&param=12541351&BU=Mobile
+              - img "Image" [ref=e1087]
+            - link [ref=e1092] [cursor=pointer]:
+              - /url: /samsung-galaxy-s25-fe-5g-navy-128-gb/p/itm90e887b150eea?pid=MOBHQCH6HZZH3BTH&param=426262&BU=Mobile
+              - img "Image" [ref=e1095]
+            - link [ref=e1100] [cursor=pointer]:
+              - /url: /vivo-t5x-5g-cyber-green-128-gb/p/itm7da8aa253e72b?pid=MOBHQC8ZE5PQMZPH&param=2352&BU=Mobile
+              - img "Image" [ref=e1103]
+            - link [ref=e1108] [cursor=pointer]:
+              - /url: /oppo-k14x-5g-icy-blue-64-gb/p/itm188c7a4b69292?pid=MOBHKZF3YEJNPZHZ&param=23466576&BU=Mobile
+              - img "Image" [ref=e1111]
+            - link [ref=e1116] [cursor=pointer]:
+              - /url: /samsung-a36-5g-dark-blue-128-gb/p/itm2efbf47502056?pid=MOBHNJ8FRCKPXUAS&param=1351&BU=Mobile
+              - img "Image" [ref=e1119]
+            - link [ref=e1124] [cursor=pointer]:
+              - /url: /realme-p4-lite-5g-mosaic-blue-64-gb/p/itm90c243961f214?pid=MOBHN7A8CMJGRACT&param=29829&BU=Mobile
+              - img "Image" [ref=e1127]
+            - link [ref=e1132] [cursor=pointer]:
+              - /url: /poco-x8-pro-black-256-gb/p/itmfbd9f2b2c7db9?pid=MOBHMGG5WYZAECZY&param=75472&BU=Mobile
+              - img "Image" [ref=e1135]
+            - link [ref=e1140] [cursor=pointer]:
+              - /url: /realme-p4x-5g-matte-silver-128-gb/p/itm575b1540859e4?pid=MOBHN7A8H9WAG4PD&param=2652462&BU=Mobile
+              - img "Image" [ref=e1143]
+            - link [ref=e1148] [cursor=pointer]:
+              - /url: /google-pixel-11-hibiscus-256-gb/p/itm9779ebb35cc5b?pid=MOBHPHNVKVFNMHM3&param=228820&BU=Mobile
+              - img "Image" [ref=e1151]
+          - button "Next Slide" [ref=e1152]
+      - generic [ref=e1158]: Hang on, loading content
+      - generic [ref=e1172]:
+        - generic [ref=e1173]: More about Mobile Phones
+        - generic [ref=e1174]: +
+      - contentinfo [ref=e1175]:
+        - generic [ref=e1177]:
+          - generic [ref=e1178]:
+            - generic [ref=e1179]:
+              - generic [ref=e1180]: ABOUT
+              - link "Contact Us" [ref=e1181] [cursor=pointer]:
+                - /url: /helpcentre?otracker=footer_navlinks
+              - link "About Us" [ref=e1182] [cursor=pointer]:
+                - /url: https://corporate.flipkart.net/corporate-home
+              - link "Careers" [ref=e1183] [cursor=pointer]:
+                - /url: https://www.flipkartcareers.com/?otracker=footer_navlinks
+              - link "Flipkart Stories" [ref=e1184] [cursor=pointer]:
+                - /url: http://stories.flipkart.com/?otracker=footer_navlinks
+              - link "Press" [ref=e1185] [cursor=pointer]:
+                - /url: http://stories.flipkart.com/category/top-stories/news/
+              - link "Corporate Information" [ref=e1186] [cursor=pointer]:
+                - /url: /corporate-information
+            - generic [ref=e1187]:
+              - generic [ref=e1188]: GROUP COMPANIES
+              - link "Myntra" [ref=e1189] [cursor=pointer]:
+                - /url: https://www.myntra.com/
+              - link "Cleartrip" [ref=e1190] [cursor=pointer]:
+                - /url: https://www.cleartrip.com/
+              - link "Shopsy" [ref=e1191] [cursor=pointer]:
+                - /url: https://www.shopsy.in
+            - generic [ref=e1192]:
+              - generic [ref=e1193]: HELP
+              - link "Payments" [ref=e1194] [cursor=pointer]:
+                - /url: /pages/payments
+              - link "Shipping" [ref=e1195] [cursor=pointer]:
+                - /url: /pages/shipping
+              - link "Cancellation & Returns" [ref=e1196] [cursor=pointer]:
+                - /url: /helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG
+              - link "FAQ" [ref=e1197] [cursor=pointer]:
+                - /url: /helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG
+            - generic [ref=e1198]:
+              - generic [ref=e1199]: CONSUMER POLICY
+              - link "Cancellation & Returns" [ref=e1200] [cursor=pointer]:
+                - /url: /pages/returnpolicy?otracker=footer_navlinks
+              - link "Terms Of Use" [ref=e1201] [cursor=pointer]:
+                - /url: /pages/terms?otracker=footer_navlinks
+              - link "Security" [ref=e1202] [cursor=pointer]:
+                - /url: /pages/paymentsecurity?otracker=footer_navlinks
+              - link "Privacy" [ref=e1203] [cursor=pointer]:
+                - /url: /pages/privacypolicy?otracker=footer_navlinks
+              - link "Sitemap" [ref=e1204] [cursor=pointer]:
+                - /url: /sitemap?otracker=footer_navlinks
+              - link "Grievance Redressal" [ref=e1205] [cursor=pointer]:
+                - /url: /pages/grievance-redressal-mechanism?otracker=footer_navlinks
+              - link "EPR Compliance" [ref=e1206] [cursor=pointer]:
+                - /url: /pages/ewaste-compliance-tnc?otracker=footer_navlinks
+              - link "FSSAI Food Safety Connect App" [ref=e1207] [cursor=pointer]:
+                - /url: https://fssai.gov.in/cms/food-safety-connect.php
+            - generic [ref=e1208]:
+              - generic [ref=e1209]: "Mail Us:"
+              - generic [ref=e1210]:
+                - paragraph [ref=e1211]: Flipkart Internet Private Limited,
+                - paragraph [ref=e1212]: Buildings Alyssa, Begonia &
+                - paragraph [ref=e1213]: Clove Embassy Tech Village,
+                - paragraph [ref=e1214]: Outer Ring Road, Devarabeesanahalli Village,
+                - paragraph [ref=e1215]: Bengaluru, 560103,
+                - paragraph [ref=e1216]: Karnataka, India
+              - generic [ref=e1217]: "Social:"
+              - generic [ref=e1218]:
+                - link "Facebook" [ref=e1220] [cursor=pointer]:
+                  - /url: https://www.facebook.com/flipkart
+                  - img "Facebook" [ref=e1221]
+                - link "Twitter" [ref=e1223] [cursor=pointer]:
+                  - /url: https://www.twitter.com/flipkart
+                  - img "Twitter" [ref=e1224]
+                - link "YouTube" [ref=e1226] [cursor=pointer]:
+                  - /url: https://www.youtube.com/flipkart
+                  - img "YouTube" [ref=e1227]
+                - link "Instagram" [ref=e1229] [cursor=pointer]:
+                  - /url: https://www.instagram.com/flipkart
+                  - img "Instagram" [ref=e1230]
+            - generic [ref=e1231]:
+              - generic [ref=e1232]: "Registered Office Address:"
+              - generic [ref=e1233]:
+                - paragraph [ref=e1234]: Flipkart Internet Private Limited,
+                - paragraph [ref=e1235]: Buildings Alyssa, Begonia &
+                - paragraph [ref=e1236]: Clove Embassy Tech Village,
+                - paragraph [ref=e1237]: Outer Ring Road, Devarabeesanahalli Village,
+                - paragraph [ref=e1238]: Bengaluru, 560103,
+                - paragraph [ref=e1239]: Karnataka, India
+                - paragraph [ref=e1240]: "CIN : U51109KA2012PTC066107"
+                - paragraph
+                - paragraph [ref=e1241]:
+                  - text: "Telephone:"
+                  - link "044-45614700" [ref=e1242] [cursor=pointer]:
+                    - /url: tel:044-45614700
+                  - text: /
+                  - link "044-67415800" [ref=e1243] [cursor=pointer]:
+                    - /url: tel:044-67415800
+          - generic [ref=e1244]:
+            - generic [ref=e1245]:
+              - img "Become a Seller" [ref=e1246]
+              - link "Become a Seller" [ref=e1247] [cursor=pointer]:
+                - /url: https://seller.flipkart.com/?utm_source=fkwebsite&utm_medium=websitedirect
+            - generic [ref=e1248]:
+              - img "Advertise" [ref=e1249]
+              - generic "Advertise" [ref=e1250]
+            - generic [ref=e1251]:
+              - img "Gift Cards" [ref=e1252]
+              - link "Gift Cards" [ref=e1253] [cursor=pointer]:
+                - /url: /the-gift-card-store?otracker=footer_navlinks
+            - generic [ref=e1254]:
+              - img "Help Center" [ref=e1255]
+              - link "Help Center" [ref=e1256] [cursor=pointer]:
+                - /url: /helpcentre?otracker=footer_navlinks
+            - generic [ref=e1257]: © 2007-2026 Flipkart.com
+            - img "Payment methods"
+  - contentinfo
+```
+
+# Test source
+
+```ts
+  1  | import {test,expect, chromium}from'@playwright/test'
+  2  | 
+  3  | test("handling tabs",async()=>{
+  4  |     const browser=await chromium.launch();
+  5  |     const context=await browser.newContext()
+  6  |     const pageOne=await context.newPage();
+  7  | 
+  8  |     await pageOne.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+  9  |     console.log(await pageOne.title());
+  10 |     await pageOne.locator('//input[@id="name"]').fill("javascript")
+  11 |     await pageOne.waitForTimeout(5000)
+  12 | 
+  13 |     const pageTwo=await context.newPage();
+  14 | 
+  15 |     await pageTwo.goto("https://www.facebook.com/")
+  16 |     console.log(await pageTwo.title());
+  17 |     await pageTwo.locator('//input[@name="email"]').fill("rupaselvan95@gmail.com")
+  18 |     await pageTwo.waitForTimeout(5000)
+  19 |     
+  20 | })
+  21 | 
+  22 | 
+  23 | 
+  24 | test("tabs handling ",async({browser})=>{
+  25 |     const context=await browser.newContext();
+  26 |     const page=await context.newPage();
+  27 |     await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+  28 |     console.log(await page.title());
+  29 |     await page.locator('//input[@name="username"]').fill("playwright");
+  30 |     const [newtab]=await Promise.all([
+  31 |         context.waitForEvent('page'),
+  32 |         page.locator('//a[text()="OrangeHRM, Inc"]').click()
+  33 | 
+  34 |     ])
+  35 |     await newtab.waitForLoadState()
+  36 |     await newtab.locator('//button[text()="Book a Free Demo"]').click()
+  37 |     await newtab.pause()
+  38 |     
+  39 | })
+  40 | 
+  41 | 
+  42 | //5.10.2026 
+  43 | //page navigation
+  44 | test("page navigation",async({page})=>{
+  45 |     await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+  46 |     await page.getByPlaceholder("Username").fill("Admin");
+  47 |     await page.getByPlaceholder("Password").fill("admin123");
+  48 |     await page.getByRole("button",{name:" Login "}).click();
+  49 | 
+  50 |     await page.pause();
+  51 |     await page.goBack();
+  52 |     await page.pause();
+  53 |     await page.goForward();
+  54 |     await page.pause();
+  55 |     await page.reload();
+  56 |     await page.pause();
+  57 | });
+  58 | 
+  59 | 
+  60 | 
+  61 | 
+  62 | test("page flipkart",async({page})=>{
+> 63 |     await page.goto("https://www.flipkart.com/mobile-phones-store?pageUID=1791219342622");
+     |                ^ Error: page.goto: Test timeout of 30000ms exceeded.
+  64 |     await page.goto("https://www.flipkart.com/search?q=apple+mobile&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_HistoryAutoSuggest_1_2_na_na_na&otracker1=AS_QueryStore_HistoryAutoSuggest_1_2_na_na_na&as-pos=1&as-type=HISTORY&suggestionId=apple+mobile%7CMobiles&requestId=e159c854-cc9a-4a8c-8407-ddcbccc18b6e");
+  65 |     await page.pause();
+  66 |     await page.goBack();
+  67 |     await page.pause();
+  68 |     await page.goForward();
+  69 |     await page.pause();
+  70 |     await page.reload();
+  71 |     await page.pause();
+  72 | });
+```
